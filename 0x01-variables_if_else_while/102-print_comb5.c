@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	int a1, a2;
+
+	for (a1 = 0; a1 <= 98; a1++)
+	{
+		for (a2 = a1 + 1; a2 <= 99; a2++)
+		{
+			putchar((a1 / 10) + '0');
+			putchar((a1 % 10) + '0');
+			putchar(' ');
+			putchar((a2 / 10) + '0');
+			putchar((a2 % 10) + '0');
+
+			if (a1 == 98 && a2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
+}
+
