@@ -2,7 +2,10 @@
 #define MAIN_H
 
 /*
- * Entry - Jennifer Obidike prototypes
+ * File: main.h
+ * Auth: Jennifer
+ * Desc: Header file containing the prototypes of all functions
+ *       included in the static library libholberton.a.
  */
 
 int _putchar(char c);
