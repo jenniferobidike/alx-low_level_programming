@@ -1,13 +1,11 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN_H
+#define MAIN_H
 
 /*
- * file: main.h
- * Auth: Jennifer Obidike
- * Desc: Header file containing prototypes of funtions for static library libmy.a
+ * Entry - Jennifer Obidike prototypes
  */
 
-int _putchar(char c)
+int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
