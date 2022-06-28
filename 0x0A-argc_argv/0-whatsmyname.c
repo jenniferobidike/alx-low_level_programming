@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-/*
- * main - Prints the program name followed by a new line
+/**
+ * main - prints name
+ *
  * @argc: count
- * @argv: arrays of pointers
+ * @argv: pointer to arrays
  *
  * Return: Always 0
  */
+
 
 int main(int argc, char *argv[])
 {
