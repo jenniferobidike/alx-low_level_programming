@@ -2,32 +2,33 @@
 #include <stdlib.h>
 
 /**
- * main - Entry Point
- * @argc: arguments
- * @argv: array pointing to arguments
+ * main - print the addition of two numbers
+ * @argc: count
+ * @argv: arrays to pointer
  * Return: 0
  */
+
 
 int main(int argc, char *argv[])
 {
 
-	int i, sum = 0;
+	int num, digit, sum = 0;
 
-	if (argc < 1)
-		return (0);
-
-	for (i = 1; i < argc; i++)
+	for (num = 1; num < argc; num++)
 	{
 
-		if (!atoi(argv[i]))
+		for (digit = 0; argv[num][digit]; digit++)
 		{
 
-			printf("%s\n", "Error");
-			return (1);
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 
 		}
 
-		sum += atoi(argv[i]);
+		sum += atoi(argv[num]);
 
 	}
 
